@@ -1,0 +1,4 @@
+int i=1;
+for i = 1 to n do
+for j = 1 to m do
+a(i,j) = 10;

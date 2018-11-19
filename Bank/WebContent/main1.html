@@ -1,0 +1,170 @@
+<html>
+<title>P.M.V.M BANK</title>
+<title><img src="title.png"></img></title>
+<head>
+<style>
+ul {
+font-family: Arial, Verdana;
+font-size: 14px;
+margin: 0;
+padding: 0;
+list-style: none;
+
+}
+ul li {
+display: block;
+position: relative;
+float: left;
+}
+li ul {
+display: none;
+}
+ul li a {
+display: block;
+text-decoration: none;
+color: #ffffff;
+border-top: 1px solid #ffffff;
+padding: 5px 15px 5px 15px;
+background: #d11500;
+margin-left: 1px;
+white-space: nowrap;
+}
+ul li a:hover {
+background: #617F8A;
+}
+li:hover ul {
+display: block;
+position: absolute;
+}
+li:hover li {
+float: none;
+font-size: 11px;
+}
+li:hover a {
+background: #d11500;
+}
+li:hover li a:hover {
+background: #d11500;
+}
+
+
+li:link ul{text-decoration:none;}
+li:link ul{color:BLACK}      /* unvisited link */	
+li:visited ul{color:BLACK}  /* visited link */
+li:hover ul{color:WHITE}  /* mouse over link */
+li:active ul{color:BLACK}  /* selected link */
+
+	
+
+a{text-decoration:none;}
+a:link {color:BLACK}      /* unvisited link */	
+a:visited {color:BLACK}  /* visited link */
+a:hover {color:Blue}  /* mouse over link */
+a:active {color:BLACK}  /* selected link */
+
+
+marquee
+{
+font-family:"Harlow Solid";
+font-size:30px;
+}
+
+.updates
+{
+border:3px;
+}
+
+
+
+p.footer{
+position:relative;
+top:5px;
+right:550x;
+}
+
+a.link
+{
+a:link {color:Green}      /* unvisited link */	
+a:visited {color:BLACK}  /* visited link */
+a:hover {color:red}  /* mouse over link */
+a:active {color:BLACK}  /* selected link */
+decoration:none;
+}
+</style>
+<script type="text/javascript" src="bpopup.js">
+	
+$(document).ready( function() {
+    $('.subMenu').smint({
+    	'scrollSpeed' : 1000	
+    });
+});</script>
+
+
+
+</head>
+<table width="154" height="100%" style="margin:1 auto;border:5px;"  >
+</table>
+<table  width="1024" height="100%" style="margin:1 auto;border:5px;" >
+<tbody >
+<tr>
+<td>
+
+<div style="width:1024px;height:95px;float:center;background-color:white;float:left;margin-right:30px;">
+	<a href="main1.html" TARGET="" ><img src="images/untitled.png"/></a>
+		</div>
+	</td>
+	</tr>
+	<tr>
+	<td>
+		<div style="background-image:url('images/bordermarque.png');width:1024px;height:40px;float:left;margin-right:20px;">
+		<marquee  style="font-size:10 px;" id="updates" onmouseover="this.stop();" onmouseout="this.start();" >
+				Welcome to P.M.V.M BANK!!!&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+		YOUR FEED BACK IS IMPORTANT TO US &nbsp; &nbsp;>>>>>>><a href="login.html" target="main"><u class="link">CLICK HERE</u></a><<<<<<<&nbsp; &nbsp; TO GIVE US A SOME RATINGS&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp   
+			</marquee>	
+		</div>
+</td>
+</tr>
+<tr>
+<td>
+<div style="background-image:url('images/sideborder.png');width:224px;height:520px;float:left;">
+
+<img src="images/sidenav.png" usemap="#sidenav">
+<map name="sidenav">
+  <area shape="rect" coords="0,180,224,235" alt="interestrates" target="" href="services.HTML#rates">
+  <area shape="rect" coords="0,250,224,305" alt="fixeddepsit" href="services.HTML#fd"  target="">
+  <area shape="rect" coords="0,315,224,365" alt="lockerser" href="services.HTML#locker" target="">
+   <area shape="rect" coords="0,380,224,435" alt="fixedd" href="services.HTML#loan" target="">
+  <area shape="rect" coords="0,440,224,495" alt="locke" href="services.HTML#gold" target="">
+</map>
+</div>
+<div style="background-image:url('images/NAVBARBORDER.png');width:800px;height:36px;float:left;background-color:white;border=2px" >
+<ul id="menu" style="position:relative;top:4;left:50;">
+   <li><b><a href="demoo2.html" target="main">Home</a></b></li>
+        <li>
+        	<b><a href="">Join Us</a></b>
+        	<ul>
+        		<li><b><a href="newacc.html" target="main">Create Account</a></b></li>
+        		<li><b><a href="login1.html" target="main">Login In</a></b></li>
+        	</ul>
+        </li>
+		<li><b><a href="aboutus.html" target="main">About Us</a></b></li>
+<li ><b><a href="login.html" target="main">FeedBack</a></li></b> 	
+   <li><b><a href="contactus.html" target="main">Contact us</a></b></li> 	
+     
+
+   </ul> 	
+</div>
+<div style="width:800px;height:464px;float:left;">
+<iframe  name="main" width="790" height="464" frameborder="0" align="right" scrolling="no" src="demoo2.html">
+</iframe>
+
+<div style="margin-left:10px"></div>
+</div>
+<div style="width:1024px;height:40px;float:left;background-color:black;">
+	<p id="footer" class="footer" style="text-align:center;color:white;font-size:10px">2013 P.M.V.M BANK<br> </p>
+</div>
+</td>
+</tr>
+
+</tbody>
+</html>

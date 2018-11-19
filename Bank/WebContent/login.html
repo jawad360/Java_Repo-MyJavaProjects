@@ -1,0 +1,130 @@
+
+<html>
+<head>
+<style>   .rating {
+          overflow: hidden;
+          display: inline-block;
+      }
+      .rating-input {
+          position: absolute;
+          left: 0;
+          top: -50px;
+      }
+      .rating:hover .rating-star:hover,
+      .rating:hover .rating-star:hover ~ .rating-star,
+      .rating-input:checked ~ .rating-star {
+          background-position: 0 0;
+      }
+      .rating-star,
+      .rating:hover .rating-star {
+          float: right;
+          display: block;
+          width: 16px;
+          height: 16px;
+          background: url('http://kubyshkin.ru/samples/star-rating/star.png') 0 -16px;
+      }
+
+/* Just for the demo */
+body {
+    margin: 20px;
+}
+  </style>
+
+<script>
+function validateForm()
+{
+var x=document.forms["myForm"]["fname"].value;
+if (x==null || x=="")
+  {
+  alert("Name Cannot Be Blank ");
+  return false;
+  }	
+  
+  
+var z=document.forms["myForm"]["email"].value;
+var atpos=z.indexOf("@");
+var dotpos=z.lastIndexOf(".");
+if (atpos<1 || dotpos<atpos+2 || dotpos+2>=z.length)	
+  {
+  alert("Not a valid e-mail address");
+  return false;
+  }
+  
+  
+  var l=document.forms["myform"]["phone"].value;
+  if(l.length()>10){
+  alert("Not a valid phone number");
+  return false;
+  }
+      
+      
+  
+}
+  
+
+</script>
+<title>Feedback Form
+</title>
+</head>
+<body background="images/BG.png">
+<h1>Feedback Form</h1>
+<form name="myForm" action="message.php" onsubmit="return validateForm()" method="get">
+<table>
+<tr><td>First name:</td>
+<td>
+ <input type="text" name="fname">
+</td>
+</tr>
+
+<tr><td>Email address:</td>
+<td>
+ <input type="text" name="email">
+</td>
+</tr>
+
+<tr><td>Address:</td>
+<td>
+ <textarea rows="4" cols="30" name="address" >
+</textarea>
+</td>
+</tr>
+<tr><td>Phone no:</td>
+<td>
+ <input type="Text" name="phn" >
+</input>
+</td>
+</tr>
+<tr><td>Date Of Birth:</td>
+<td>
+<input type="date" name="datewa" >
+</td>
+</tr>
+<tr>
+    <td>Feedback:
+        </td>
+        <td>
+ <textarea rows="4" cols="30" name="feedback">
+</textarea>
+</td>
+</tr>
+<tr>
+<td>
+</br>
+</td>
+</tr>
+
+<tr>
+<td>
+</br>
+</td>
+</tr>
+<tr>
+<td>
+<input type="submit" value="Submit">
+</td>
+</tr>
+
+</table>
+</form>
+</body>
+</html>

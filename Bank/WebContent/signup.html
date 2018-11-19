@@ -1,0 +1,77 @@
+<html>
+<head>
+
+    <title>Example form</title>
+    <style type="text/css">
+    .container {
+        width: 300px;
+        clear: both;
+    }
+    .container input {
+        width: 100%;
+        clear: both;
+    }
+
+    </style>
+
+<script>
+
+function validateForm()
+{
+var x=document.forms["myForm"]["fname"].value;
+if (x==null || x=="")
+  {
+  alert("First name must be filled out");
+  return false;
+  }
+
+  
+  var y=document.forms["myForm"]["email"].value;
+var atpos=y.indexOf("@");
+var dotpos=y.lastIndexOf(".");
+if (atpos<1 || dotpos<atpos+2 || dotpos+2>=y.length)
+  {
+  alert("Not a valid e-mail address");
+  return false;
+  }
+  
+  
+var passid_len = passid.value.length;
+if (passid_len == 0 ||passid_len >= my || passid_len < mx)
+{
+alert("Password should not be empty / length be between "+mx+" to "+my);
+passid.focus();
+return false;
+}
+return true;
+
+var p=document.forms["myForm"]["password"].value;
+var q=document.forms["myForm"]["passwordrepeat"].value;
+if(p!=q)
+alert("Your password and confirmation password do not match.");
+   return false; 
+ }
+
+
+</script>
+</head>
+<body>
+
+<h1>SIGN UP with P.M.V.M BANK</h1>
+  <div class="container">
+     <form name="myForm" action="demo_form.asp" onsubmit="return validateForm()" method="post">
+        <p>NAME:   <input type="text" name="fname" value="" placeholder="Name"></p>
+        <p>EMAIL ADDRESS<input type="text" name="email" value="" placeholder="Email Address"></p>
+		<p>PASSWORD<input type="password" name="password" value="" placeholder="Password"></p>
+        <p>ENTER PASSWORD AGAIN<input type="password" name="passwordrepeat" value="" placeholder="Password"></p>
+		</div>
+		<div class="signup">
+		<p>DATE OF BIRTH  <input type="dob" name="dob" value="" placeholder="dd/mm/yyyy"></p>
+		</p>
+        <p class="submit"><input type="submit" name="commit" value="Sign up"></p>
+      </form>
+    </div>
+
+    
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+function validateForm()
+{
+var x=document.forms["contactform"]["name"].value;
+if (x==null || x=="")
+  {
+  alert("Name Cannot Be Blank ");
+  return false;
+  }
+  
+  
+var z=document.forms["contactform"]["mail"].value;
+var atpos=z.indexOf("@");
+var dotpos=z.lastIndexOf(".");
+if (atpos<1 || dotpos<atpos+2 || dotpos+2>=z.length)	
+  {
+  alert("Not a valid e-mail address");
+  return false;
+  }
+  
+  
+  var l=document.forms["contactform"]["add"].value;
+  if (l==null || l=="")
+  {
+  alert("Add Cannot Be Blank ");
+  return false;
+  }
+      
+      
+  
+}
+  
+
+</script>
+<title>Contact Us</title>
+<body background="images\BG.png">
+<form name="contactform" action="message.php" onsubmit="return validateForm()" method="get" >
+Name:<br>
+<input type="text" name="name" placeholder="Full name"><br>
+E-mail:<br>
+<input type="text" name="mail" placeholder="someone@mail.com"/><br>
+Message:<br>
+<textarea rows="4" cols="50" placeholder="Message" name="add">
+</textarea>
+<br>	
+<input type="submit" value="Send">
+<input type="reset" value="Reset">
+</form>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<pre>
+CONTACT :
+Jawad Sonalkar                                                 Shashank Thigle
+Bank Owner and CEO of P.M.V.M BANK                             Bank Owner and CFO P.M.V.M BANK
+                            	
+
+</pre>
+</body>
+</html>

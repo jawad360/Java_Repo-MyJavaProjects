@@ -1,0 +1,20 @@
+
+    <results>
+        <quote symbol="MSFT">
+            <AverageDailyVolume>39945800</AverageDailyVolume>
+            <Change>+0.65</Change>
+            <DaysLow>38.07</DaysLow>
+            <DaysHigh>38.48</DaysHigh>
+            <YearLow>27.64</YearLow>
+            <YearHigh>38.98</YearHigh>
+            <MarketCapitalization>319.0B</MarketCapitalization>
+            <LastTradePriceOnly>38.43</LastTradePriceOnly>
+            <DaysRange>38.07 - 38.48</DaysRange>
+            <Name>Microsoft Corpora</Name>
+            <Symbol>MSFT</Symbol>
+            <Volume>4766884</Volume>
+            <StockExchange>NasdaqNM</StockExchange>
+        </quote>
+    </results>
+
+ 

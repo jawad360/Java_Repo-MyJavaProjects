@@ -1,0 +1,40 @@
+<tr>
+<td>
+<span class="rating" name="rating">
+    <input type="radio" class="rating-input"
+        id="rating-input-1-5" name="rating-input-1">
+    <label for="rating-input-1-5" class="rating-star"></label>
+    <input type="radio" class="rating-input"
+        id="rating-input-1-4" name="rating-input-1">
+    <label for="rating-input-1-4" class="rating-star"></label>
+    <input type="radio" class="rating-input"
+        id="rating-input-1-3" name="rating-input-1">
+    <label for="rating-input-1-3" class="rating-star"></label>
+    <input type="radio" class="rating-input"
+        id="rating-input-1-2" name="rating-input-1">
+    <label for="rating-input-1-2" class="rating-star"></label>
+    <input type="radio" class="rating-input"
+        id="rating-input-1-1" name="rating-input-1">
+    <label for="rating-input-1-1" class="rating-star"></label>
+</span>
+</td>
+</tr>
+
+
+
+
+
+
+
+http://localhost:8080/weprojectsh/serv
+
+
+
+
+
+
+
+				   <b data-src="images/U.S._National_Bank_Building_-_Portland,_Oregon.jpg" data-alt="#slideshow-2"></b>
+                    <b data-src="images/download.jpg" data-alt="#slideshow-5"></b>
+                    <b data-src="images/first national bank interior after.jpg" data-alt="#slideshow-6"></b>
+                    <b data-src="images/BANK_PIC.jpg" data-alt="#slideshow-8"></b>

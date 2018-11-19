@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">TipCal</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">jawad</string>
+    <string name="my_message">My First Apps</string>
+    <string name="button">My Button</string>
+    
+
+</resources>

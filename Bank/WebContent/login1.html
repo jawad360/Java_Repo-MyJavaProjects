@@ -1,0 +1,55 @@
+<html>
+	<head>
+	<script>
+		function validate()
+		{
+		
+			if(document.forms["newacc"]["acc"].value=="")
+			{
+				alert("Some fields are empty");
+				return false;
+			}
+			if(document.forms["newacc"]["pin"].value=="")
+			{
+				alert("Some fields are empty");
+				return false;
+			}
+		}
+	</script>
+	</head>
+
+	<body background="images/BG.png" style="margin:20px;" cellpadding=5>
+	<h1>New Online Account</h1>
+
+	<form name="newacc" action="message.php" onsubmit="return validate()" method="post">
+		<table>
+			
+			
+			<tr>
+				<td>
+					Account No :
+				</td>
+				<td>
+					<input type="text" name="acc">
+				</td>
+			</tr>
+			<tr>
+				<td>
+					Pin :
+				</td>
+				<td>
+					<input type="text" name="pin">
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<br><input type="submit" value="Ok">
+				</td>
+				<td>
+				</td>
+			</tr>
+		</table>
+	</form>
+	</body>
+
+</html>
